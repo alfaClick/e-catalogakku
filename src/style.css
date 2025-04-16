@@ -1,0 +1,68 @@
+@import 'tailwindcss';
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+  name: 'light';
+  default: true;
+  prefersdark: false;
+  color-scheme: 'light';
+  /* Mengubah warna-warna dasar ke tema terang dengan abu-abu terang #F0F0F0 */
+  --color-base-100: #F0F0F0;
+  --color-base-200: #E0E0E0;
+  --color-base-300: #D0D0D0;
+  --color-base-content: #333333;
+  
+  /* Mengatur warna merah terang #E7473C sebagai warna primary */
+  --color-primary: #E7473C;
+  --color-primary-content: #FFFFFF;
+  
+  /* Mengatur warna secondary dengan kombinasi yang sesuai */
+  --color-secondary: #404040;
+  --color-secondary-content: #FFFFFF;
+  
+  /* Mengatur warna accent dengan variasi merah yang sedikit berbeda */
+  --color-accent: #C93931;
+  --color-accent-content: #FFFFFF;
+  
+  /* Menjaga warna-warna utilitas lainnya */
+  --color-neutral: #757575;
+  --color-neutral-content: #FFFFFF;
+  --color-info: oklch(54% 0.245 262.881);
+  --color-info-content: #FFFFFF;
+  --color-success: oklch(64% 0.2 131.684);
+  --color-success-content: #FFFFFF;
+  --color-warning: oklch(64% 0.222 41.116);
+  --color-warning-content: #FFFFFF;
+  --color-error: #E7473C;
+  --color-error-content: #FFFFFF;
+  
+  /* Mempertahankan nilai radius dan properti lainnya */
+  --radius-selector: 1rem;
+  --radius-field: 0rem;
+  --radius-box: 0.5rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+.swiper-container-equal-height {
+  height: auto !important;
+}
+
+.swiper-slide-equal-height {
+  height: auto !important;
+  display: flex !important;
+}
+
+@media (max-width: 639px) {
+  .mobile-centered .swiper-slide {
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .mobile-centered .swiper-wrapper {
+    display: flex !important;
+    align-items: center !important;
+  }
+}
