@@ -24,7 +24,7 @@ function TwoWheels() {
         <Navbar />
         {/* Banner */}  
         <div
-          className="bg-[url('/src/assets/images/two-wheels/banner.png')] 
+          className="bg-[url('/images/two-wheels/banner.png')] 
           w-full
           h-[300px]
           bg-cover 

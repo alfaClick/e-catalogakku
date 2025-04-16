@@ -34,7 +34,7 @@ function Export() {
         <Navbar />
         {/* Banner */}
         <div
-          className="bg-[url('/src/assets/images/export/banner.png')] 
+          className="bg-[url('/images/export/banner.png')] 
           w-full
           h-[300px]
           bg-cover 
