@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import CompanyImage from '../../assets/images/company-logo.png'
 
 function About() {
   const [imageLoaded, setImageLoaded] = useState(false)

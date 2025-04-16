@@ -3,11 +3,11 @@ import { Pagination, Autoplay } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import FeaturedProductCard from './FeaturedProductCard'
-import FourWheelsFeaturedProduct from '../../assets/images/four-wheels/Cap-Pivot.png'
-import TwoWheelsFeaturedProduct from '../../assets/images/two-wheels/Dumper-Clutch.png'
-import TruckAndHeavyEquipmentFeaturedProduct from '../../assets/images/truck-heavy-equipment/Rubber-Mounting-Cab.png'
-import ExportFeaturedProduct from '../../assets/images/export/Grommet.png'
-import IndustryFeaturedProduct from '../../assets/images/industry/Grommet-Wire-Hardness-2.png'
+import FourWheelsFeaturedProduct from '/images/four-wheels/Cap-Pivot.png'
+import TwoWheelsFeaturedProduct from '/images/two-wheels/Dumper-Clutch.png'
+import TruckAndHeavyEquipmentFeaturedProduct from '/images/truck-heavy-equipment/Rubber-Mounting-Cab.png'
+import ExportFeaturedProduct from '/images/export/Grommet.png'
+import IndustryFeaturedProduct from '/images/industry/Grommet-Wire-Hardness-2.png'
 
 function FeaturedProductSwiper() {
   return (

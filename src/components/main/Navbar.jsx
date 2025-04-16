@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import CompanyLogo from '../../assets/images/company-logo.png';
+import CompanyLogo from '/images/company-logo.png';
 
 function Navbar() {
   return (
