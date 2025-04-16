@@ -23,7 +23,7 @@ function Navbar() {
                   <Link to="/product/industry">Industry</Link>
                 </li>
                 <li>
-                  <Link to="#">Four Wheels</Link>
+                  <Link to="/product/four-wheels">Four Wheels</Link>
                 </li>
                 <li>
                   <Link to="/product/two-wheels">Two Wheels</Link>
@@ -32,7 +32,7 @@ function Navbar() {
                   <Link to="/product/truck-and-heavy-equipment">Truck And Heavy Equipment</Link>
                 </li>
                 <li>
-                  <Link to="/product/export">Export</Link>
+                  <Link to="#">Export</Link>
                 </li>
               </ul>
             </details>
@@ -71,7 +71,7 @@ function Navbar() {
                   <Link to="/product/industry">Industry</Link>
                 </li>
                 <li>
-                  <Link to="#">Four Wheels</Link>
+                  <Link to="/product/four-wheels">Four Wheels</Link>
                 </li>
                 <li>
                   <Link to="/product/two-wheels">Two Wheels</Link>
@@ -80,7 +80,7 @@ function Navbar() {
                   <Link to="/product/truck-and-heavy-equipment">Truck And Heavy Equipment</Link>
                 </li>
                 <li>
-                  <Link to="/product/export">Export</Link>
+                  <Link to="#">Export</Link>
                 </li>
               </ul>
             </li>
