@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import products from '../utils/product'
 import ProductCard from '../components/ProductCard'
-import Navbar from '../components/Export/Navbar'
+import Navbar from '../components/export/Navbar'
 import { nanoid } from 'nanoid'
 
 /*************  ✨ Windsurf Command ⭐  *************/
