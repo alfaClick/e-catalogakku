@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import CompanyLogo from '../../assets/images/company-logo.png';
+import { Link } from 'react-router-dom';
+import CompanyLogo from '../../assets/images/company-logo.png'; // pakai path versi fitur-baru
 
 function Navbar() {
   // Initialize theme state from localStorage or default to 'light'
@@ -13,13 +14,8 @@ function Navbar() {
   // Apply theme when component mounts and when theme changes
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      // Save theme to localStorage
       localStorage.setItem('theme', theme);
-      
-      // Apply theme to document
       document.documentElement.setAttribute('data-theme', theme);
-      
-      // Apply dark class for Tailwind
       if (theme === 'dark') {
         document.documentElement.classList.add('dark');
       } else {
@@ -36,35 +32,35 @@ function Navbar() {
   return (
     <div className={`navbar ${theme === 'dark' ? 'bg-gray-800 text-white' : 'bg-base-100 text-black'} shadow-sm fixed top-0 z-10`}>
       <div className="navbar-start">
-        <a className="text-xl cursor-pointer">
+        <Link to="/" className="text-xl cursor-pointer">
           <img src={CompanyLogo} alt="Logo" />
-        </a>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a href="#about">About</a>
+            <a href="#about">About</a> {/* ini tetap <a> karena anchor scroll */}
           </li>
           <li>
             <details>
               <summary>Products</summary>
               <ul className={`p-2 ${theme === 'dark' ? 'bg-gray-800 text-white' : 'bg-base-100 text-black'}`}>
                 <li>
-                  <a href="/product/industry">Industry</a>
+                  <Link to="/product/industry">Industry</Link>
                 </li>
                 <li>
-                  <a href="/product/four-wheels">Four Wheels</a>
+                  <Link to="/product/four-wheels">Four Wheels</Link>
                 </li>
                 <li>
-                  <a href="/product/two-wheels">Two Wheels</a>
+                  <Link to="/product/two-wheels">Two Wheels</Link>
                 </li>
                 <li>
-                  <a href="/product/truck-and-heavy-equipment">
+                  <Link to="/product/truck-and-heavy-equipment">
                     Truck And Heavy Equipment
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/product/export">Export</a>
+                  <Link to="/product/export">Export</Link>
                 </li>
               </ul>
             </details>
@@ -115,27 +111,27 @@ function Navbar() {
             }`}
           >
             <li>
-              <a href='#about'>About</a>
+              <a href="#about">About</a> {/* tetap pakai <a> */}
             </li>
             <li>
-              <a>Products</a>
+              <span>Products</span>
               <ul className="p-2">
                 <li>
-                  <a href="/product/industry">Industry</a>
+                  <Link to="/product/industry">Industry</Link>
                 </li>
                 <li>
-                  <a href="/product/four-wheels">Four Wheels</a>
+                  <Link to="/product/four-wheels">Four Wheels</Link>
                 </li>
                 <li>
-                  <a href="/product/two-wheels">Two Wheels</a>
+                  <Link to="/product/two-wheels">Two Wheels</Link>
                 </li>
                 <li>
-                  <a href="/product/truck-and-heavy-equipment">
+                  <Link to="/product/truck-and-heavy-equipment">
                     Truck And Heavy Equipment
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/product/export">Export</a>
+                  <Link to="/product/export">Export</Link>
                 </li>
               </ul>
             </li>
@@ -147,3 +143,4 @@ function Navbar() {
 }
 
 export default Navbar;
+

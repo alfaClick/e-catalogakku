@@ -54,7 +54,7 @@ function TruckAndHeavyEquipment() {
         </button>
         {/* Banner */}
         <div
-          className="bg-[url('/src/assets/images/truck-heavy-equipment/banner.png')] 
+          className="bg-[url('/images/truck-heavy-equipment/banner.png')] 
           w-full
           h-[300px]
           bg-cover 
@@ -64,6 +64,7 @@ function TruckAndHeavyEquipment() {
           <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
             <h1 className="text-4xl md:text-5xl font-bold text-white">
               Truck & Heavy Equipment
+
             </h1>
           </div>
         </div>

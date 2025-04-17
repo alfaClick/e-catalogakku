@@ -1,44 +1,42 @@
-import React from 'react'
-import CompanyLogo from '../../assets/images/company-logo.png'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import CompanyLogo from '/images/company-logo.png';
 
 function Navbar() {
   return (
     <div className="navbar bg-base-100 shadow-sm fixed top-0 z-10">
       <div className="navbar-start">
-        <a className="text-xl cursor-pointer">
+        <Link to="/" className="text-xl cursor-pointer">
           <img src={CompanyLogo} alt="Logo" />
-        </a>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
             <details>
               <summary>Products</summary>
               <ul className="p-2 bg-base-100">
                 <li>
-                  <a href="/product/industry">Industry</a>
+                  <Link to="/product/industry">Industry</Link>
                 </li>
                 <li>
-                  <a href="#">Four Wheels</a>
+                  <Link to="/product/four-wheels">Four Wheels</Link>
                 </li>
                 <li>
-                  <a href="/product/two-wheels">Two Wheels</a>
+                  <Link to="/product/two-wheels">Two Wheels</Link>
                 </li>
                 <li>
-                  <a href="/product/truck-and-heavy-equipment">
-                    Truck And Heavy Equipment
-                  </a>
+                  <Link to="/product/truck-and-heavy-equipment">Truck And Heavy Equipment</Link>
                 </li>
                 <li>
-                  <a href="/product/export">Export</a>
+                  <Link to="#">Export</Link>
                 </li>
               </ul>
             </details>
           </li>
-          
         </ul>
       </div>
       <div className="navbar-end">
@@ -64,36 +62,33 @@ function Navbar() {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-black"
           >
             <li>
-              <a href="/">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a>Products</a>
+              <span>Products</span>
               <ul className="p-2">
                 <li>
-                  <a href="/product/industry">Industry</a>
+                  <Link to="/product/industry">Industry</Link>
                 </li>
                 <li>
-                  <a href="#">Four Wheels</a>
+                  <Link to="/product/four-wheels">Four Wheels</Link>
                 </li>
                 <li>
-                  <a href="/product/two-wheels">Two Wheels</a>
+                  <Link to="/product/two-wheels">Two Wheels</Link>
                 </li>
                 <li>
-                  <a href="/product/truck-and-heavy-equipment">
-                    Truck And Heavy Equipment
-                  </a>
+                  <Link to="/product/truck-and-heavy-equipment">Truck And Heavy Equipment</Link>
                 </li>
                 <li>
-                  <a href="#">Export</a>
+                  <Link to="#">Export</Link>
                 </li>
               </ul>
             </li>
-           
           </ul>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

@@ -5,7 +5,6 @@
   default: true;
   prefersdark: false;
   color-scheme: 'light';
-  /* Mengubah warna-warna dasar ke tema terang dengan abu-abu terang #F0F0F0 */
   --color-base-100: #F0F0F0;
   --color-base-200: #E0E0E0;
   --color-base-300: #D0D0D0;

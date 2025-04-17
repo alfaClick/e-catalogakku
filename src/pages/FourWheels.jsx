@@ -52,7 +52,7 @@ function FourWheels() {
         <Navbar theme={theme} toggleTheme={toggleTheme} />
         {/* Banner */}
         <div
-          className="bg-[url('/src/assets/images/four-wheels/banner.png')] 
+          className="bg-[url('/images/four-wheels/banner.png')] 
           w-full
           h-[300px]
           bg-cover 

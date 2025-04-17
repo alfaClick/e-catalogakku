@@ -52,7 +52,7 @@ function Industry() {
         <Navbar theme={theme} toggleTheme={toggleTheme} />
         {/* Banner */}
         <div
-          className="bg-[url('/src/assets/images/industry/banner.png')] 
+          className="bg-[url('/images/industry/banner.png')] 
           w-full
           h-[300px]
           bg-cover 
