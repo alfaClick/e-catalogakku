@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import CompanyLogo from '../../assets/images/company-logo.png'; // pakai path versi fitur-baru
+import CompanyLogo from '/images/company-logo.png'; // pakai path versi fitur-baru
 
 function Navbar() {
   // Initialize theme state from localStorage or default to 'light'
